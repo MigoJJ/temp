@@ -1,31 +1,23 @@
-import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class GDSLaboratoryDataModify {
 
+    private static final Map<String, String> MAPPING = new HashMap<>();
+
+    static {
+        MAPPING.put("GOT", "\n[ GOT - GPT - ALP - GGT - T-Bil - Alb ]");
+        MAPPING.put("T-Chol", "\n[T-Chol - HDL - Triglyceride - LDL ];");
+        MAPPING.put("HGB", "\n[ Hb - WBC - Platelet];");
+        MAPPING.put("Glucose", "\n[Glucose - HbA1c ];");
+        MAPPING.put("free T-4", "\n[ T3 - free-T4 - TSH ];");
+    }
+
     public static void main(String textFromInputArea) {
-
-        if (textFromInputArea.contains("GOT")) {
-            String result = "\n[ GOT - GPT - ALP - GGT - T-Bil - Alb ]";
-            GDSLaboratoryDataGUI.appendTextAreas(result);
+        for (Map.Entry<String, String> entry : MAPPING.entrySet()) {
+            if (textFromInputArea.contains(entry.getKey())) {
+                GDSLaboratoryDataGUI.appendTextAreas(entry.getValue());
+            }
         }
-        if (textFromInputArea.contains("T-Chol")) {
-            String result = "\n[T-Chol - HDL - Triglyceride - LDL ]; ";
-            GDSLaboratoryDataGUI.appendTextAreas(result);
-        }
-        if (textFromInputArea.contains("HGB")) {
-            String result = "\n[ Hb - WBC - Platelet]; ";
-            GDSLaboratoryDataGUI.appendTextAreas(result);
-        }
-        if (textFromInputArea.contains("Glucose")) {
-            String result = "\n[Glucose - HbA1c ]; ";
-            GDSLaboratoryDataGUI.appendTextAreas(result);
-        }
-        if (textFromInputArea.contains("free T-4")) {
-            String result = "\n[ T3 - free-T4 - TSH ]; ";
-            GDSLaboratoryDataGUI.appendTextAreas(result);
-        }
-
-        
-        
     }
 }
