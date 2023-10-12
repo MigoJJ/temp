@@ -1,0 +1,85 @@
+the blow contents are data --------------------------
+GOT   :   49
+GPT   :   94
+ALP   :   233
+GGT   :   30
+Total Protein   :   7.4
+Albumin   :   4.6
+Total Bilirubin   :   0.8
+T-Chol내부   :   167
+HDL-Cholesterol   :   35
+Triglyceride   :   241
+LDL-Cholesterol   :   76
+Uric acid   :   4.5
+BUN   :   14.9
+Creatinine   :   0.8
+HGB   :   16.1
+HCT   :   46.2
+MCV   :   88.6
+MCH   :   30.9
+MCHC   :   34.9
+WBC   :   9.8
+Platelet   :   207
+WBC Diff Count   :   ...ing
+Neutrophil%   :   64.2
+LYM%   :   30.9
+MPV   :   8.9
+T3 (내부)   :   1.25
+free T-4 (내부)   :   14.68
+TSH (내부)   :   1.05
+Glucose정량(FBS/PP2h)   :   117
+RBC   :   5.21
+GLUCOSE 반정량(RBG)   :   97
+헤모글로빈A1C   :   6.9
+UA10종   :   ...ing
+S.G   :   1.015
+pH   :   6.5
+Protein   :   -
+Nitrite   :   -
+Leucocytes   :   -
+Glucose   :   -
+Ketones   :   -
+Urobilinogen   :   -
+Bilirubin   :   -
+Blood   :   -
+요침사현미경검사   :   ...ing
+RBC   :   1-3
+WBC   :   0-1
+Epi cells   :   0-1
+Ca. Oxalate   :   ...ing
+bacteria   :   ...ing
+Amr.phosphate   :   ...ing
+Amr.urate   :   ...ing
+Other   :   ...ing
+Micro Albumin   :   7.8
+
+creatinine(urine)   :   72.82
+
+A/C ratio   :   10.71
+
+eGFR   :   99
+Lipoprotein a   :   4.5
+
+아포지단백B-Apolipoprotein B   :   84
+
+
+----------------------------------------------------
+make table
+
+Parameter Value Unit 
+if parameter does not exist -> remove the row;
+using value format 
+[ GOT - GPT - ALP - GGT - T-Bil - Alb ]; 
+[T-Chol - HDL - Triglyceride - LDL ]; 
+[BUN - Cr -[eGFR - A/C ratio ];
+Uric acid [   ]
+Vitamin-D [  ]
+[ Hb - WBC - Platelet]
+[Glucose - HbA1c ]
+[ T3 - free-T4 - TSH ]
+[ TSH recepter Ab - Thyroglobulin Ab - Thyroid microsome Ab ]
+[AFP - CEA - CA19-9 - CA125 -PSA ]
+[ Lipoprotein a - ApoB ]
+[ S.G. - pH - Protein - Blood - RBC -WBC ]
+
+if parameter does not exist -> remove the row;
