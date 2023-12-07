@@ -1,0 +1,56 @@
+you are excellent physician assisstant.
+the physicain would like to make EMR organization;
+
+please excute step by step using next lines orders;
+
+clear previous input data;
+organize and make summary tablet in English;
+modify table like column titles;    #	,   MeSH Main Heading	,    Date	,    Details
+sort the table rows using disease base; 
+
+
+ NTI -> non thyroidal illness;
+ D/C -> discontinue;
+ AS[+] -> Arthrrosclerosis [+];
+ CFS -> Colonofiberscopy;
+
+Starting input data ____________________________
+# COVID-19 [+] 코로나 양성, 플루 음성입니다. 2023.10.31
+     -> transfer to Severence Hospital ER;
+     -> ...2023.11.04  : Nausea [+] 
+              with mediction for COVID-19 PCR (+)"라게부리오 ?"
+# Endocrine
+    * Diabetes mellitus (DM) without complications (1997 Dx)
+        * CKD A1 G1
+        * OT no NPDR (2022-02)
+        * s/p cataract op(+)
+    * Hypercholesterolemia (2005 Dx)
+    * CA19-9 [99 peak --> 37.2] (2013 Dx)
+
+# Hepatobiliary
+    * s/p Cholecystectomy (2009 Dx)
+        * d/t CBD dilatation 10 mm
+
+# Cardiovascular
+    * Artherosclerosis Carotid artery (2009 Dx)
+
+# ENT
+    * Maxillary sinus inverted papilloma op(+) (2011 Dx)
+
+# Musculoskeletal
+    * Spinal stenosis op(+) 
+       post op infection severe 고도일OS (2007 Dx)
+
+# Neurology
+    * early cognitive disorder (2021~)
+        * Cognitive Disorder agrevation (2023-10-06)
+          2023.11 Aggrevated Status post COVID-19 [+] 
+
+# Allergies
+    * -
+
+# Vaccinations
+    * 조스타 ( - )
+    * 뉴모 ( - )
+    * 프리베나 (2014.10)
+finishing input data ____________________________
