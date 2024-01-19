@@ -20,8 +20,6 @@ public class Vitalsign extends JFrame {
     private Double bodyTemperature = null;
     private Integer respirationRate = null;
 
-    
-    
     public Vitalsign() {
         initializeValidInputs();
         createView();
@@ -40,6 +38,8 @@ public class Vitalsign extends JFrame {
         validInputs.add("l");
         validInputs.add("r");
         validInputs.add("i");
+        validInputs.add("t");
+
     }
 
     private void createView() {
@@ -78,7 +78,7 @@ public class Vitalsign extends JFrame {
     private void createOutputArea(JPanel panel) {
         outputArea = new JTextArea(5, 20);
         outputArea.setBorder(BorderFactory.createTitledBorder("Output"));
-        outputArea.setEditable(false);
+        outputArea.setEditable(true);
         outputArea.setLineWrap(true);
         outputArea.setWrapStyleWord(true);
         JScrollPane outputScrollPane = new JScrollPane(outputArea);
@@ -131,6 +131,11 @@ public class Vitalsign extends JFrame {
                 datext = datext.replace("Regular", "irRegular");
                 descriptionArea.setText(datext);
                 break;
+            case "t":
+            	outputArea.setText("\n\tBody Temperature [      ]℃");
+                inputField.setText("");
+                descriptionArea.setText("");
+                break;
             default:
                 // Do nothing or handle any default case if required
         }
@@ -168,7 +173,7 @@ public class Vitalsign extends JFrame {
         quitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.exit(0);
+                dispose();
             }
         });
     }
@@ -195,14 +200,13 @@ public class Vitalsign extends JFrame {
             } else if (bodyTemperature == null) {
                 // Fourth input - Body Temperature
                 bodyTemperature = value;
-                outputArea.append("\n\tBody Temperature [" + bodyTemperature + "]'C");
+                outputArea.append("\n\tBody Temperature [" + bodyTemperature + "]℃");
 
                 // Reset bodyTemperature for the next input
             } else if (respirationRate == null) {
                 // Fifth input - Respiration Rate
                 respirationRate = (int) value;
                 outputArea.append("\n\tRespiration Rate [" + respirationRate + "]/minute");
-                
                 
                 sbp = null;
                 dbp = null;
